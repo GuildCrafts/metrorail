@@ -9,6 +9,15 @@ Base repository for the MetroRail goals:
 - [Data Modeling & Database Design](http://jsdev.learnersguild.org/goals/126)
 - [Web API Design, Building, and Documentation](http://jsdev.learnersguild.org/goals/127)
 
+## Team Members
+
+@jamestewartjr
+@jhallman5
+
+## Learners Guild Team Name
+
+violet-gulls
+
 ## Installation and Setup
 
 _Fill this out_
