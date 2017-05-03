@@ -1,0 +1,37 @@
+{
+  "name": "metrorail",
+  "version": "1.0.0",
+  "description": "Create a database API for a model train system",
+  "main": "app.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon app.js --ignore node_modules/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "repl": "echo 'this entered here'",
+    "linter": "node_modules/.bin/eslint .",
+    "db:create": "createdb metrorail_dev",
+    "db:migrate": "node_modules/.bin/knex migrate:latest",
+    "db:seed": "node_modules/.bin/knex seed:run",
+    "db:drop": "dropdb metrorail_dev",
+    "db:reset": "dropdb metrorail_dev && createdb metrorail_dev && node_modules/.bin/knex migrate:latest",
+    "db:console": "psql metrorail_dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zubairnahmed/metrorail.git"
+  },
+  "author": "Zubair and Jose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zubairnahmed/metrorail/issues"
+  },
+  "homepage": "https://github.com/zubairnahmed/metrorail#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "knex": "^0.13.0",
+    "nodemon": "^1.11.0",
+    "pg": "^6.1.5"
+  }
+}
